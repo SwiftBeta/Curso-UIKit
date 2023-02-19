@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Xibs View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="XibsViewController" id="BYZ-38-t0r" customClass="XibsViewController" customModule="Curso_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wby-OF-SAR">
+                                <rect key="frame" x="89" y="92" width="214" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="Jw3-6n-uNg"/>
+                                    <constraint firstAttribute="height" constant="79" id="RgQ-Dl-h4f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Navegar ViewController2"/>
+                                <connections>
+                                    <action selector="didTapOnButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="teh-Zy-8RM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJj-iq-oG8" customClass="XibsCustomView" customModule="Curso_UIKit" customModuleProvider="target">
+                                <rect key="frame" x="35" y="347" width="318" height="344"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sJj-iq-oG8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="1VI-mH-hAn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sJj-iq-oG8" secondAttribute="trailing" constant="37" id="Q8r-Lg-M6a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sJj-iq-oG8" secondAttribute="bottom" constant="119" id="XJ1-4l-2t5"/>
+                            <constraint firstItem="wby-OF-SAR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="bII-us-ZEV"/>
+                            <constraint firstItem="sJj-iq-oG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="jcX-CL-hUV"/>
+                            <constraint firstItem="wby-OF-SAR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="1" id="xiq-Mi-JNi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
